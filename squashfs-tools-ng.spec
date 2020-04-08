@@ -1,7 +1,7 @@
 Summary:	A new set of tools and libraries for working with SquashFS images
 Name:		squashfs-tools-ng
 Version:	0.8
-Release:	1
+Release:	2
 License:	LGPL v3+
 Group:		Base/Utilities
 Source0:	https://infraroot.at/pub/squashfs/%{name}-%{version}.tar.xz
@@ -40,7 +40,7 @@ Biblioteka squashfs.
 Summary:	Header files for squashfs library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki squashfs
 Group:		Development/Libraries
-Requires:	%{name}-libs = %{version}-%{release}
+Requires:	squashfs-libs = %{version}-%{release}
 
 %description -n squashfs-devel
 Header files for squashfs library.
@@ -52,7 +52,7 @@ Pliki nagłówkowe biblioteki squashfs.
 Summary:	Static squashfs library
 Summary(pl.UTF-8):	Statyczna biblioteka squashfs
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}-%{release}
+Requires:	squashfs-devel = %{version}-%{release}
 
 %description -n squashfs-static
 Static squashfs library.
@@ -62,7 +62,6 @@ Statyczna biblioteka squashfs.
 
 %prep
 %setup -q
-#-n %{name}%{version}
 
 %build
 %{__libtoolize}
