@@ -1,7 +1,7 @@
 Summary:	A new set of tools and libraries for working with SquashFS images
 Name:		squashfs-tools-ng
 Version:	0.8
-Release:	2
+Release:	3
 License:	LGPL v3+
 Group:		Base/Utilities
 Source0:	https://infraroot.at/pub/squashfs/%{name}-%{version}.tar.xz
